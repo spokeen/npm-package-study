@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/spokeen/npm-package-study/issues"
   },
-  "homepage": "https://github.com/spokeen/npm-package-study#readme"
+  "homepage": "https://github.com/spokeen/npm-package-study#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
 }
