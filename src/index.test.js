@@ -13,6 +13,8 @@ test('null', () => {
     expect(n).toBeFalsy();
 });
 
+beforeAll(() => console.log('2 - beforeAll'));
+
 test('zero', () => {
     const z = 0;
     expect(z).not.toBeNull();
