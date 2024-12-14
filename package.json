@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "用于学习 npm 包",
   "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/spokeen/npm-package-study/issues"
   },
-  "homepage": "https://github.com/spokeen/npm-package-study#readme"
+  "homepage": "https://github.com/spokeen/npm-package-study#readme",
+  "dependencies": {
+    "lerna": "^8.1.8"
+  }
 }
