@@ -1,0 +1,29 @@
+{
+  "name": "rxjs-pkg",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "soltu <634609252@qq.com>",
+  "homepage": "https://github.com/spokeen/npm-package-study/tree/main/packages/rxjs-pkg#readme",
+  "license": "ISC",
+  "main": "lib/rxjs-pkg.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spokeen/npm-package-study.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/rxjs-pkg.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/spokeen/npm-package-study/issues"
+  },
+  "dependencies": {
+    "rxjs": "^7.8.1"
+  }
+}
