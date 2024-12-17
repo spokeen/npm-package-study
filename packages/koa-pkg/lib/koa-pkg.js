@@ -1,4 +1,5 @@
 'use strict';
+const Koa = require('koa');
 
 module.exports = koaPkg;
 
