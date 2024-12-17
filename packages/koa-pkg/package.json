@@ -1,0 +1,29 @@
+{
+  "name": "koa-pkg",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "soltu <634609252@qq.com>",
+  "homepage": "https://github.com/spokeen/npm-package-study/tree/main/packages/koa-pkg#readme",
+  "license": "ISC",
+  "main": "lib/koa-pkg.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spokeen/npm-package-study.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/koa-pkg.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/spokeen/npm-package-study/issues"
+  },
+  "dependencies": {
+    "koa": "^2.15.3"
+  }
+}
