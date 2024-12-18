@@ -1,7 +1,18 @@
-'use strict';
+const pro = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('success')
+  }, 3000)
+})
 
-module.exports = rxjsPkg;
 
-function rxjsPkg() {
-  return 'Hello from rxjsPkg';
-}
+pro.then(res => {
+  console.log(`liji1 ${res} ${Date.now()}`)
+});
+
+
+setTimeout(() => {
+  console.log(`setTimeout`)
+  pro.then(res => {
+    console.log(`liji2 ${res} ${Date.now()}`)
+  });
+}, 1000)

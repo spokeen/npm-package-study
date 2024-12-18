@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/rxjs@^7/dist/bundles/rxjs.umd.min.js"></script>
+    <script>
+        // let count = 0;
+        // const rate = 1000;
+        // let lastClick = Date.now() - rate;
+
+        // document.addEventListener('click', (event) => {
+        //     if (Date.now() - lastClick > rate) {
+        //         count += event.clientX;
+        //         console.log(`Clicked ${count} times`);
+        //         lastClick = Date.now();
+        //     }
+        // });
+
+        // 等价于
+        rxjs.fromEvent(document, 'click').pipe(
+            rxjs.throttleTime(1000),
+            rxjs.map(event => event.clientX),
+            rxjs.scan((acc, cur) => acc + cur, 0)
+        ).subscribe(count => console.log(`Clicked ${count} times`));
+    </script>
+</body>
+</html>
+        
+
+
+    </script>
+</body>
+</html>
